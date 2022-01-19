@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes spin { /*에니메이션을 넣어주는 css명령어*/
+            from{
+                transform: rotate(0deg); /*transform에서 사용가능한 2차원 변환함수 -> roatae는 회전*/
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        img{
+            animation-name: spin;
+            animation-duration: 1s; /*이 애니메이션의 지속시간*/
+            animation-iteration-count: infinite;/*애니메이션이 반복하는 횟수*/
+        }
+    </style>
+    <title>&#65279;</title>
+</head>
+<body>
+    <h3>어지러워요</h3>
+    <hr>
+    <img src="media/p1.jpg" width="100px" height="150px" alt="스폰지밥">
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes spin { /*애니메이션을 구간별로 변하고 싶을 때에는 %를 이용하여 구간별로 효과를 넣어준다.*/
+            0%{
+                transform: rotate(-90deg);/*왼쪽으로 회전할때*/
+            }
+            50%{
+                transform: rotate(90deg);/*다시 원상 복귀*/
+            }
+            100%{
+                transform: rotate(-90deg);/*오른쪽으로 회전할때*/
+            }
+
+            
+        }
+        img{
+            animation-name: spin;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+    <title>&#65279;</title>
+</head>
+<body>
+    <h3>어지러워요</h3>
+    <hr>
+    <img src="media/p1.jpg" width="100px" height="150px" alt="스폰지밥">
+    
+</body>
+</html>

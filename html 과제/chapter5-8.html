@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #menubar{/*한줄이 아닌 너비를 만들어서 크기를 조정*/
+            background:olive;
+            width: 120px;
+        }
+        #menubar ul{ /*여백과 패딩 모두 0*/
+            margin: 0;
+            padding: 0;
+        }
+        #menubar ul li{
+            display: block;/*새줄로 넘어가도록 선언*/
+            list-style-type: none;/*마커 삭제*/
+            padding: 0px 15px;/*위 아래 = 0px  오른쪽 왼쪽 = 15px*/
+        }
+        #menubar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        #menubar ul li a:hover{/*마우스를 가져다 대면 색이 다른색으로 변함*/
+            color:violet;
+
+        }
+    </style>
+    <title>리스트로 수직 메뉴 만들기</title>
+</head>
+<body>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Espresso</a></li>
+            <li><a href="#">Cappuccino</a></li>
+            <li><a href="#">Cafe Latte</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

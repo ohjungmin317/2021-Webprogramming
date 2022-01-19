@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형 서식 폼 만들기</title>
+</head>
+<body>
+    <h1>도형 서식 폼 만들기</h1>
+    <hr>
+    <form><!--<form>태그로 form 요소 사용-->
+        
+        <fieldset><!--<fieldset>로 범위를 지정-->
+            <legend>도형 서식 입력</legend><!--<legend>태그로 그룹박스 지정 태그-->
+<pre>           
+선종류<select size =3><!--<select> 콤보박스 태그 size = 3개은 출력할 때 3개다 출력-->
+<option value = "1">선없음</option> <!--<option> 태그로 선택항목 만들기-->
+<option value = "2">실선</option>
+<option value = "3">점선</option>
+</select><br><br>
+선두께&nbsp;<input type ="number" min="1" max="100" step ="1">&nbsp;선색&nbsp;<input type="color" value ="#00BFFF"><br><br><!--<input type ="number"는 정교한 값 입력 에서 1씩 증가 가능 최대 100까지 선택 가능--> <!--<input type "color">로 색 선택 가능 #00BFFF는 컬러 다이어그램 초기 값  --> 
+                <input type ="range" min ="0" max ="100" list ="rangecm"> <!--<input type ="range"으로 대략적인 값 입력 최소 0 부터 100까지 값 선택 가능 -->
+                <datalist id = "rangecm"> </option> <!--datalist를 이용하여 범위값을 대략적인 값에 나타낼 수 있도록 지정-->
+                    <option value ="0"></option> 
+                    <option vlaue ="50"></option>
+                    <option value ="100"></option>      
+                </datalist>
+투명도(0~100) :
+        </pre>
+    </fieldset>
+    </form>
+</body>
+</html>
+
+ 
